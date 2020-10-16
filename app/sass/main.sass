@@ -1,11 +1,130 @@
 @import "normalize"
 .section
-  padding: 35px
+  position: relative
+  padding: 35px 0
+.section--first
+  margin-top: 205px
+  padding: 35px 0
 .container
   max-width: 1280px
   width: 100%
   margin: 0 auto
+  padding: 0 35px
+.container--full
+  display: flex
+  flex-wrap: wrap
+  justify-content: center
+  max-width: 100%
+  padding: 0
+.intro__wrapper
+  position: absolute
+  top: 0
+  bottom: 0
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  height: 80%
+.button
+  display: block
+  padding: 18px 50px
+  font-size: 20px
+  background: #F27E00
+  color: #FFFFFF
+  border: none
+  border-radius: 10px
+  cursor: pointer
+.title
+  font-size: 45px
+  text-transform: uppercase
+  font-weight: 400
+  margin: 60px 0 40px
+  width: 60%
+.text
+  margin: 20px 0 0
+  max-width: 1080px
+.title--center
+  width: 100%
+  text-align: center
+  font-weight: 300
+  font-size: 35px
+  margin: 5px 0 15px
+.title--center--main
+  font-size: 45px
+.title--instructor
+  color: #0B2030
+  font-size: 25px
+  font-weight: 400
+  margin: 0
+  width: 100%
+.text--instructor
+  font-size: 20px
+  font-weight: 200
+  margin: 0
+.text--detailed
+  font-size: 16px
+  font-weight: 200
+  color: #F27E00
+.banner__directions__wrapper
+  position: relative
+  width: 100%
+  margin: 35px 0 25px
+.banner__description
+  position: absolute
+  display: flex
+  flex-direction: row
+  top: 0
+  left: 150px
   height: 100%
-
+  background: rgba(20,20,20, 0.3)
+.banner__description__item
+  position: relative
+  flex-direction: column
+  width: 70%
+  left: 0
+  background: none
+.banner__description--right
+  left: auto
+  right: 150px
+.banner__description__item:first-child
+  margin-right: 70px
+.instructor__wrapper
+  display: flex
+  flex-wrap: wrap
+  max-width: 1090px
+  justify-content: space-between
+.instructor__inner
+  display: flex
+  flex-direction: column
+  width: 45%
+.instructor__inner--people
+  flex-direction: row
+  justify-content: space-between
+  align-items: center
+.title--services__directions
+  font-size: 20px
+  font-weight: 400
+  margin: 0 0 40px
+.services__directions
+  font-size: 20px
+  font-weight: 400
+.services__directions__item
+  display: flex
+  width: 100%
+  max-width: 1090px
+  justify-content: start
+  align-items: stretch
+.text--directions__item
+  max-width: 20%
+  width: 100%
 @import "header"
-@import "intro"
+@import "footer"
+@import "massage"
+@import "cosmetology"
+@import "hardware_cosmetology"
+@import "about"
+@import "sports_areas"
+@import "swimming"
+@import "fight_club"
+@import "rent"
+
+@import "mobile"
