@@ -15,13 +15,17 @@
 <header class="header">
     <div class="container container--footer">
         <div class="header__wrapper">
+            <button class="header__nav-toggle">
+                <span class="header__nav-toggle__item"></span>
+            </button>
             <div class="header__address">
                 <p>Кабардинка, ул. Мира 20</p>
             </div>
             <div class="header__logo">
-                <object type="image/svg+xml" data="images/dest/logo.svg">
-                    <img src="images/dest/logo.png" alt="logo">
-                </object>
+                <picture>
+                    <source srcset="images/dest/logo_min.png" media="(max-width: 680px)" />
+                    <img src="images/dest/logo.png" />
+                </picture>
             </div>
             <div class="header__social">
                 <a href="#" class="header__link">
@@ -40,20 +44,36 @@
                     </object>
                 </a>
             </div>
+            <div class="header__inst">
+                <a href="#" class="header__link">
+                    <object type="image/svg+xml" data="images/dest/inst.svg">
+                        <img src="images/dest/inst.png" alt="inst">
+                    </object>
+                </a>
+            </div>
         </div>
 
     </div>
     <nav class="header__nav">
+        <div class="header__logo__mobile">
+            <img src="images/dest/logo.png" alt="">
+        </div>
         <ul class="header__nav__block">
             <li>
                 <a class="header__nav__link" href="#">
-                    <img src="images/dest/fitness-ico.png" alt="">
+                    <picture>
+                        <source srcset="images/dest/fitness_mobile.png" media="(max-width: 680px)" />
+                        <img src="images/dest/fitness-ico.png" alt="">
+                    </picture>
                     <span>Услуги</span>
                 </a>
             </li>
             <li>
                 <a class="header__nav__link" href="#">
-                    <img src="images/dest/team_filled-ico.png" alt="">
+                    <picture>
+                        <source srcset="images/dest/team_filled_mobile.png" media="(max-width: 680px)" />
+                        <img src="images/dest/team_filled-ico.png" alt="">
+                    </picture>
                     <span>Команда</span>
                 </a>
                 <div class="header__nav__submenu">
@@ -65,16 +85,39 @@
             </li>
             <li>
                 <a class="header__nav__link" href="#">
-                    <img src="images/dest/pool-ico.png" alt="">
+                    <picture>
+                        <source srcset="images/dest/pool_mobile.png" media="(max-width: 680px)" />
+                        <img src="images/dest/pool-ico.png" alt="">
+                    </picture>
                     <span>Направления</span></a>
             </li>
             <li>
                 <a class="header__nav__link" href="#">
-                    <img src="images/dest/lightbulb-ico.png" alt="">
+                    <picture>
+                        <source srcset="images/dest/lightbulb_mobile.png" media="(max-width: 680px)" />
+                        <img src="images/dest/lightbulb-ico.png" alt="">
+                    </picture>
                     <span>О Нас</span>
                 </a>
             </li>
         </ul>
+        <div class="header__social header__social--mobile">
+            <a href="#" class="header__link">
+                <object type="image/svg+xml" data="images/dest/mail.png.svg">
+                    <img src="images/dest/mail.png" alt="mail">
+                </object>
+            </a>
+            <a href="#" class="header__link">
+                <object type="image/svg+xml" data="images/dest/phone.svg">
+                    <img src="images/dest/phone.png" alt="phone">
+                </object>
+            </a>
+            <a href="#" class="header__link">
+                <object type="image/svg+xml" data="images/dest/inst.svg">
+                    <img src="images/dest/inst.png" alt="inst">
+                </object>
+            </a>
+        </div>
     </nav>
 </header>
 <div class="call">

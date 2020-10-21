@@ -21,8 +21,13 @@
   color: #ffffff
   font-size: 20px
   font-weight: 300
+.header__logo__mobile
+  max-width: 150px
+  width: 100%
+  margin: 0 auto
 .header__nav
   background: #ffffff
+  padding: 0 10px
 .header__nav__block
   max-width: 900px
   width: 100%
@@ -34,7 +39,7 @@
   img
     height: 15px
     width: 15px
-    margin: auto 10px
+    margin: 18px 10px
   li
     position: relative
 .header__nav__link
@@ -58,6 +63,47 @@
   padding: 5px
   margin: 10px 0
   line-height: 1.2
-.header__nav__submenu__link:hover
-  background: #59CCF8
-  color: #ffffff
+  &:hover
+    background: #59CCF8
+    color: #ffffff
+.header__inst, .header__nav-toggle
+  display: none
+  position: absolute
+.header__inst
+  right: 24px
+.header__nav-toggle
+  width: 40px
+  padding: 10px 0
+  font-size: 0
+  color: transparent
+  border: 0
+  background: 0
+  cursor: pointer
+  top: 0
+  bottom: 0
+  left: 24px
+  z-index: 2
+.header__nav-toggle__item
+  display: block
+  width: 100%
+  height: 8px
+  border-radius: 3px
+  background-color: #ffffff
+  margin: auto
+  transition: background .2s linear
+  position: absolute
+  left: 0
+  &:after, &:before
+    content: ""
+    width: 100%
+    height: 8px
+    border-radius: 3px
+    background-color: #ffffff
+    position: absolute
+    left: 0
+    z-index: 1
+    transition: transform .2s linear
+  &:after
+    bottom: -14px
+  &:before
+    top: -14px
