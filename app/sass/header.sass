@@ -31,7 +31,33 @@
   justify-content: space-between
   font-size: 20px
   font-weight: 400
+  img
+    height: 15px
+    width: 15px
+    margin: auto 10px
+  li
+    position: relative
 .header__nav__link
   text-decoration: none
   color: #4B4946
   text-transform: uppercase
+  line-height: 2.5
+  display: flex
+.header__nav__submenu
+  position: absolute
+  background: #ffffff
+  padding: 20px
+  opacity: 0
+  z-index: -1
+.header__nav__submenu__link
+  text-align: center
+  display: block
+  text-decoration: none
+  color: #4b4946
+  font-size: 18px
+  padding: 5px
+  margin: 10px 0
+  line-height: 1.2
+.header__nav__submenu__link:hover
+  background: #59CCF8
+  color: #ffffff
