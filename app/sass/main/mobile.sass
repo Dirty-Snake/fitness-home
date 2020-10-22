@@ -7,16 +7,20 @@
     font-size: 20px
   .home__advantages--right
     max-width: 180px
+  //contact
+  .main-contact
+    flex-direction: column
+    align-items: center
+  .main-contact__map
+    width: 100%
 @media only screen and (max-width: 680px)
   .header
     max-height: 65px
-  .home__slider__wrapper
-    padding: 0
   .header__address
     display: none
   .header__social
     display: none
-  .header__inst, .header__nav-toggle
+  .header__inst, .header__nav-toggle, .header__logo__mobile
     display: block
   .header__logo
     margin: 0 auto
@@ -49,3 +53,33 @@
     margin: 30px auto
   .header__logo
     max-width: 150px
+  //home
+  .home__slider__wrapper
+    padding: 0
+  .home__wrapper
+    flex-direction: column
+  .home__logo
+    padding: 0
+  .home__advantages--left, .home__advantages--right
+    max-width: none
+  .home__text
+    text-align: left
+  .home__text--row
+    justify-content: flex-end
+  .home__slider__title
+    font-size: 18px
+  .slider__desc
+    font-size: 12px
+  //services
+  .main-services__item
+    width: auto
+  .main-services__name
+    font-size: 12px
+  .main-services__desc
+    font-size: 14px
+  //fitness
+  .main-fitness__desc
+    font-size: 15px
+  //footer
+  .footer
+    padding: 0
