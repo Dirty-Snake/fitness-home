@@ -9,6 +9,16 @@
   position: relative
 .team-trainers__info
   position: absolute
+  left: 140px
+  max-width: 550px
+  width: 100%
+  z-index: 2
+  top: 0
+  bottom: 0
+  display: flex
+  flex-direction: column
+  justify-content: center
+  color: #ffffff
 .team-trainers:after
   content: ''
   width: 100%
@@ -21,17 +31,6 @@
 .team-trainers.active:after
   left: 0
   transform: skew(0deg)
-.team-trainers__info
-  left: 140px
-  max-width: 550px
-  width: 100%
-  z-index: 2
-  top: 0
-  bottom: 0
-  display: flex
-  flex-direction: column
-  justify-content: center
-  color: #ffffff
 .team-trainers__type
   font-size: 24px
 .team-trainers__name
