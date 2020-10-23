@@ -26,19 +26,26 @@
   height: 80%
 .button
   display: block
-  padding: 18px 50px
+  padding: 18px 40px
   font-size: 20px
   background: #F27E00
   color: #FFFFFF
   border: none
   border-radius: 10px
   cursor: pointer
+.call
+  width: 45px
+  position: fixed
+  right: 2%
+  bottom: 2%
+  z-index: 1
+  cursor: pointer
 .title
   font-size: 45px
   text-transform: uppercase
   font-weight: 400
   margin: 60px 0 40px
-  width: 60%
+  width: 100%
 .text
   margin: 20px 0 0
   max-width: 1080px
@@ -87,19 +94,7 @@
   right: 150px
 .banner__description__item:first-child
   margin-right: 70px
-.instructor__wrapper
-  display: flex
-  flex-wrap: wrap
-  max-width: 1090px
-  justify-content: space-between
-.instructor__inner
-  display: flex
-  flex-direction: column
-  width: 45%
-.instructor__inner--people
-  flex-direction: row
-  justify-content: space-between
-  align-items: center
+
 .title--services__directions
   font-size: 20px
   font-weight: 400
@@ -118,13 +113,14 @@
   width: 100%
 @import "header"
 @import "footer"
-@import "massage"
-@import "cosmetology"
-@import "hardware_cosmetology"
-@import "about"
-@import "sports_areas"
-@import "swimming"
-@import "fight_club"
-@import "rent"
-
+@import "about/about"
+@import "sports_directions/sports_areas"
+@import "sports_directions/swimming"
+@import "sports_directions/fight_club"
+@import "services/massage"
+@import "services/rent"
 @import "mobile"
+@import "about/mobile_about"
+@import "services/mobile_services"
+@import "sports_directions/mobile_sports_directions"
+@import "sports_directions/mobile_sports_areas"

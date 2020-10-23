@@ -11,7 +11,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="container">
+    <div class="container container--footer">
         <div class="header__wrapper">
             <div class="header__address">
                 <p>Кабардинка, ул. Мира 20</p>
@@ -39,34 +39,35 @@
                 </a>
             </div>
         </div>
-        <nav>
-            <ul class="header__nav">
-                <li>
-                    <a class="header__nav__link" href="#">Услуги</a>
-                </li>
-                <li>
-                    <a class="header__nav__link" href="#">Команда</a>
-                </li>
-                <li>
-                    <a class="header__nav__link" href="#">Направления</a>
-                </li>
-                <li>
-                    <a class="header__nav__link" href="#">О Нас</a>
-                </li>
-            </ul>
-        </nav>
+
     </div>
+    <nav class="header__nav">
+        <ul class="header__nav__block">
+            <li>
+                <a class="header__nav__link" href="#">Услуги</a>
+            </li>
+            <li>
+                <a class="header__nav__link" href="#">Команда</a>
+            </li>
+            <li>
+                <a class="header__nav__link" href="#">Направления</a>
+            </li>
+            <li>
+                <a class="header__nav__link" href="#">О Нас</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <!--swimming-->
 <section class="section section--first">
     <div class="container container--full">
         <h1 class="title title--center">Плавание</h1>
-        <p class="text">На территории комплекса находятся два профессиональных бассейна.
+        <p class="text text__banner-directions">На территории комплекса находятся два профессиональных бассейна.
             В бассейне работает опытный тренерский состав, который воспитывается талантливых призёров, рекордсменов и победителей в водных видах спорта.</p>
         <div class="banner__directions__wrapper">
             <picture>
                 <source srcset="images/dest/basin.png" type="image/webp">
-                <img class="img" src="images/dest/basin.png" alt="services" />
+                <img class="img img__directions" src="images/dest/basin.png" alt="services" />
             </picture>
             <div class="banner__description">
                 <div class="banner__description banner__description__item">
@@ -74,7 +75,9 @@
                     <p class="text text--swimming__text text--swimming__mini__text"><span class="number">6</span>дорожек</p>
                 </div>
                 <div class="banner__description banner__description__item">
-                    <p class="text text--basin__text">Большой открытый <span class="basin__text">бассейн</span></p>
+                    <p class="text text--basin__text">Большой</p>
+                    <p class="text text--basin__text">открытый</p>
+                    <p class="text text--basin__text">БАССЕЙН</p>
                 </div>
             </div>
         </div>
@@ -111,7 +114,7 @@
         <div class="banner__directions__wrapper">
             <picture>
                 <source srcset="images/dest/basin2.png" type="image/webp">
-                <img class="img" src="images/dest/basin2.png" alt="services" />
+                <img class="img img__directions" src="images/dest/basin2.png" alt="services" />
             </picture>
             <div class="banner__description banner__description--right">
                 <div class="banner__description banner__description__item">
@@ -119,7 +122,9 @@
                     <p class="text text--swimming__text text--swimming__mini__text"><span class="number">4</span>дорожки</p>
                 </div>
                 <div class="banner__description banner__description__item">
-                    <p class="text text--basin__text"><span class="basin__text">новый</span>крытый бассейн </p>
+                    <p class="text text--basin__text">новый</p>
+                    <p class="text text--basin__text">крытый</p>
+                    <p class="text text--basin__text">БАССЕЙН</p>
                 </div>
             </div>
         </div>
@@ -161,7 +166,7 @@
     </div>
 </section>
 <section class="section">
-    <div class="container container--full">
+    <div class="container">
         <h1 class="title title--services__directions">Услуги бассейна</h1>
         <div class="services__directions__item">
             <p class="text text--directions__item">Плавание</p>

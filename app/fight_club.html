@@ -11,7 +11,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="container">
+    <div class="container container--footer">
         <div class="header__wrapper">
             <div class="header__address">
                 <p>Кабардинка, ул. Мира 20</p>
@@ -39,33 +39,34 @@
                 </a>
             </div>
         </div>
-        <nav>
-            <ul class="header__nav">
-                <li>
-                    <a class="header__nav__link" href="#">Услуги</a>
-                </li>
-                <li>
-                    <a class="header__nav__link" href="#">Команда</a>
-                </li>
-                <li>
-                    <a class="header__nav__link" href="#">Направления</a>
-                </li>
-                <li>
-                    <a class="header__nav__link" href="#">О Нас</a>
-                </li>
-            </ul>
-        </nav>
+
     </div>
+    <nav class="header__nav">
+        <ul class="header__nav__block">
+            <li>
+                <a class="header__nav__link" href="#">Услуги</a>
+            </li>
+            <li>
+                <a class="header__nav__link" href="#">Команда</a>
+            </li>
+            <li>
+                <a class="header__nav__link" href="#">Направления</a>
+            </li>
+            <li>
+                <a class="header__nav__link" href="#">О Нас</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <!--swimming-->
 <section class="section section--first">
     <div class="container container--full">
         <h1 class="title title--center">Бойцовский клуб</h1>
-        <p class="text">Первый открытый клуб единоборств в Кабардинке, санаторий «Жемчужина моря» </p>
+        <p class="text text__banner-directions">Первый открытый клуб единоборств в Кабардинке, санаторий «Жемчужина моря» </p>
         <div class="banner__directions__wrapper">
             <picture>
                 <source srcset="images/dest/boxing1.png" type="image/webp">
-                <img class="img" src="images/dest/boxing1.png" alt="services" />
+                <img class="img img__directions" src="images/dest/boxing1.png" alt="services" />
             </picture>
             <div class="banner__description banner__directions--fight_club">
                 <div class="banner__description banner__description__item banner__description__item--fight_club">
@@ -119,10 +120,10 @@
         <div class="banner__directions__wrapper">
             <picture>
                 <source srcset="images/dest/boxing2.png" type="image/webp">
-                <img class="img" src="images/dest/boxing2.png" alt="services" />
+                <img class="img img__directions" src="images/dest/boxing2.png" alt="services" />
             </picture>
-            <div class="banner__description banner__description--right">
-                <div class="banner__description banner__description__item banner__description__item--fight_club">
+            <div class="banner__description banner__description--bottom">
+                <div class="banner__description banner__description__item banner__description__item--fight_club_bottom">
                     <p class="text text--boxing__text">смешанные</p>
                     <p class="text text--boxing__text">ЕДИНОБОРСТВА</p>
                 </div>
@@ -133,7 +134,7 @@
 </section>
 
 <section class="section">
-    <div class="container container--full">
+    <div class="container">
         <h1 class="title title--services__directions">Услуги бойцовского клуба</h1>
         <div class="services__directions__item">
             <p class="text text--directions__item">Тайский бокс</p>
