@@ -4,7 +4,8 @@
   left: 0
   right: 0
   bottom: 0
-  background: #4B4946
+  background: rgba(75, 73, 70, 0.44)
+  backdrop-filter: blur(34px)
   z-index: 1
   max-height: 160px
   height: 100%
@@ -13,19 +14,97 @@
   justify-content: space-between
   align-items: center
 .header__social
-  display: flex
+  display: none
 .header__link
   margin: 0 10px
 .header__address
   color: #ffffff
   font-size: 20px
   font-weight: 300
+.header__logo__mobile
+  max-width: 150px
+  width: 100%
+  margin: 0 auto
+  display: none
 .header__nav
+  background: #ffffff
+  padding: 0 10px
+.header__nav__block
+  max-width: 900px
+  width: 100%
+  margin: 0 auto
   display: flex
-  justify-content: space-around
+  justify-content: space-between
   font-size: 20px
   font-weight: 400
+  img
+    height: 15px
+    width: 15px
+    margin: 18px 10px
+  li
+    position: relative
 .header__nav__link
   text-decoration: none
   color: #4B4946
   text-transform: uppercase
+  line-height: 2.5
+  display: flex
+.header__nav__submenu
+  position: absolute
+  background: #ffffff
+  padding: 20px
+  opacity: 0
+  z-index: -1
+.header__nav__submenu__link
+  text-align: center
+  display: block
+  text-decoration: none
+  color: #4b4946
+  font-size: 18px
+  padding: 5px
+  margin: 10px 0
+  line-height: 1.2
+  &:hover
+    background: #59CCF8
+    color: #ffffff
+.header__inst, .header__nav-toggle
+  display: none
+  position: absolute
+.header__inst
+  right: 24px
+.header__nav-toggle
+  width: 40px
+  padding: 10px 0
+  font-size: 0
+  color: transparent
+  border: 0
+  background: 0
+  cursor: pointer
+  top: 0
+  bottom: 0
+  left: 24px
+  z-index: 2
+.header__nav-toggle__item
+  display: block
+  width: 100%
+  height: 8px
+  border-radius: 3px
+  background-color: #ffffff
+  margin: auto
+  transition: background .2s linear
+  position: absolute
+  left: 0
+  &:after, &:before
+    content: ""
+    width: 100%
+    height: 8px
+    border-radius: 3px
+    background-color: #ffffff
+    position: absolute
+    left: 0
+    z-index: 1
+    transition: transform .2s linear
+  &:after
+    bottom: -14px
+  &:before
+    top: -14px
