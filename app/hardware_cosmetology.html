@@ -11,7 +11,7 @@
 </head>
 <body>
 <header class="header">
-    <div class="container">
+    <div class="container container--footer">
         <div class="header__wrapper">
             <div class="header__address">
                 <p>Кабардинка, ул. Мира 20</p>
@@ -39,60 +39,67 @@
                 </a>
             </div>
         </div>
-        <nav>
-            <ul class="header__nav">
-                <li>
-                    <a class="header__nav__link" href="#">Услуги</a>
-                </li>
-                <li>
-                    <a class="header__nav__link" href="#">Команда</a>
-                </li>
-                <li>
-                    <a class="header__nav__link" href="#">Направления</a>
-                </li>
-                <li>
-                    <a class="header__nav__link" href="#">О Нас</a>
-                </li>
-            </ul>
-        </nav>
+
     </div>
+    <nav class="header__nav">
+        <ul class="header__nav__block">
+            <li>
+                <a class="header__nav__link" href="#">Услуги</a>
+            </li>
+            <li>
+                <a class="header__nav__link" href="#">Команда</a>
+            </li>
+            <li>
+                <a class="header__nav__link" href="#">Направления</a>
+            </li>
+            <li>
+                <a class="header__nav__link" href="#">О Нас</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 <!--hardware_cosmetology-->
 <section class="section section--first">
-    <picture>
-        <source srcset="images/dest/hardware_cosmetology.png" type="image/webp">
-        <img class="img" src="images/dest/hardware_cosmetology.png" alt="services" />
-    </picture>
+    <div class="cosmetology-intro__wrapper">
+        <div class="cosmetology-intro__inner">
+            <h1 class="title title--intro-massage title--hardware_cosmetology">
+                Аппаратная косметология
+            </h1>
+            <ul class="title title--list-hardware_cosmetology">
+                <li>прессотерпия</li>
+                <li>прессотерпия</li>
+                <li>прессотерпия</li>
+                <li>прессотерпия</li>
+                <li>прессотерпия</li>
+            </ul>
+        </div>
+        <picture>
+            <source media="(max-width: 500px)" srcset="images/dest/hardware_cosmetology.png, images/dest/hardware_cosmetology-2x.png 2x">
+            <img class="img img__massage" src="images/dest/hardware_cosmetology.png" alt="services" />
+        </picture>
+    </div>
     <div class="container">
-        <div class="cosmetology-intro__wrapper">
-                <h1 class="title title--intro title--hardware_cosmetology">
-                    Аппаратная косметология
-                </h1>
-                <ul class="title title--list">
-                    <li>прессотерпия</li>
-                    <li>прессотерпия</li>
-                    <li>прессотерпия</li>
-                    <li>прессотерпия</li>
-                    <li>прессотерпия</li>
-                </ul>
-            </div>
         <p class="text">
             Для современной науки свойственно продвигаться вперед семимильными шагами. Особенно много открытий было произведено в косметологической сфере. Для общей практики косметологии внедряются самые инновационные методы и технологии. Соединение знакомых всем методов ухода за телом человека с использованием уникальных аппаратов выдаст в итоге новейшую технологию – аппаратную косметологию.
         </p>
     </div>
 </section>
+<!--end services intro-->
 <section class="section">
     <div class="container">
-        <div class="services__wrapper">
-            <h1 class="title">lgp</h1>
-            <p class="text">Аппаратная процедура, основанная на вакуумно-механическом воздействии на кожу и ткани организма.
-                Принцип действия lpg-массажа основан на механическом воздействии на тело с помощью специальных насадок аппарата в двух направлениях — вакуумом и вибромассажем.
-            </p>
-            <p class="text">Lpg-массаж проводят через индивидуальный спец. костюм для гигиеничного и
-                безболезненного воздействия манипулы и лучшего захвата кожи.
-            </p>
-            <div class="text__wrapper">
-
+        <div class="massage__wrapper">
+            <div class="massage__item">
+                <h1 class="title">lgp</h1>
+            </div>
+            <div class="massage__item">
+                <p class="text">Аппаратная процедура, основанная на вакуумно-механическом воздействии на кожу и ткани организма.
+                    Принцип действия lpg-массажа основан на механическом воздействии на тело с помощью специальных насадок аппарата в двух направлениях — вакуумом и вибромассажем.
+                </p>
+                <p class="text">Lpg-массаж проводят через индивидуальный спец. костюм для гигиеничного и
+                    безболезненного воздействия манипулы и лучшего захвата кожи.
+                </p>
+            </div>
+            <div class="massage__item">
                 <p class="list__title">эффект</p>
                 <ul class="list">
                     <li class="text__list">подтянутая и гладкая кожа</li>
@@ -104,34 +111,33 @@
                 </ul>
                 <div class="button__wrapper">
                     <button class="button">показания</button>
-                    <button class="button button--services">противопоказания</button>
+                    <button class="button button--massage">противопоказания</button>
                 </div>
             </div>
-
-            <div class="services__item">
+            <div class="massage__item">
                 <picture>
                     <source srcset="images/dest/imageLGP.png" type="image/webp">
                     <img class="img" src="images/dest/imageLGP.png" alt="services" />
                 </picture>
             </div>
-
-
         </div>
-
-
     </div>
 </section>
 <section class="section">
     <div class="container">
-        <div class="services__wrapper">
-            <h1 class="title">Прессотерапия</h1>
-            <p class="text">Лежим и худеем
-                С помощью аппаратного лимфодренажного массажа можно похудеть, избавиться от целлюлита и отеков на ногах.
-            </p>
-            <p class="text">Прессотерапия — это аппаратный массаж, который проводится сжатым воздухом. Его главная цель — разогнать кровообращение и лимфоток. После сеанса ускоряется обмен веществ в организме, из тканей выводится
-                лишняя жидкость, а клетки начинают активно расщеплять жир. Одна процедура прессотерапии заменяет 15 сеансов ручного массажа.
-            </p>
-            <div class="text__wrapper">
+        <div class="massage__wrapper">
+            <div class="massage__item">
+                <h1 class="title">Прессотерапия</h1>
+            </div>
+            <div class="massage__item">
+                <p class="text">Лежим и худеем
+                    С помощью аппаратного лимфодренажного массажа можно похудеть, избавиться от целлюлита и отеков на ногах.
+                </p>
+                <p class="text">Прессотерапия — это аппаратный массаж, который проводится сжатым воздухом. Его главная цель — разогнать кровообращение и лимфоток. После сеанса ускоряется обмен веществ в организме, из тканей выводится
+                    лишняя жидкость, а клетки начинают активно расщеплять жир. Одна процедура прессотерапии заменяет 15 сеансов ручного массажа.
+                </p>
+            </div>
+            <div class="massage__item">
                 <p class="list__title">эффект</p>
                 <ul class="list">
                     <li class="text__list">подтянутая и гладкая кожа</li>
@@ -143,35 +149,33 @@
                 </ul>
                 <div class="button__wrapper">
                     <button class="button">показания</button>
-                    <button class="button button--services">противопоказания</button>
+                    <button class="button button--massage">противопоказания</button>
                 </div>
             </div>
-
-            <div class="services__item">
+            <div class="massage__item">
                 <picture>
                     <source srcset="images/dest/Pressotherapy.png" type="image/webp">
                     <img class="img" src="images/dest/Pressotherapy.png" alt="services" />
                 </picture>
             </div>
-
-
         </div>
-
-
     </div>
 </section>
 <section class="section">
     <div class="container">
-        <div class="services__wrapper">
-            <h1 class="title">Миостимуляция</h1>
-            <p class="text">Миостимуляция – это воздействие на мышцы слабого импульсного электрического тока (30–150 Гц), приводящее к их сокращению. 20 минут миостимуляции – это минус почти 2000 килокалорий.
-                Особенностью процедуры является возможность ее применения как локально на зонах, которые обычно трудно поддаются коррекции только с помощью диеты, так и одновременно на многих участках тела – если подтянуть мышцы и убрать лишние сантиметры необходимо на всем теле.
+        <div class="massage__wrapper">
+            <div class="massage__item">
+                <h1 class="title">Миостимуляция</h1>
+            </div>
+            <div class="massage__item">
+                <p class="text">Миостимуляция – это воздействие на мышцы слабого импульсного электрического тока (30–150 Гц), приводящее к их сокращению. 20 минут миостимуляции – это минус почти 2000 килокалорий.
+                    Особенностью процедуры является возможность ее применения как локально на зонах, которые обычно трудно поддаются коррекции только с помощью диеты, так и одновременно на многих участках тела – если подтянуть мышцы и убрать лишние сантиметры необходимо на всем теле.
 
-
-            </p>
-            <p class="text">Миостимуляция показана тем, у кого есть избыток жировых отложений на талии, низкие ягодицы и «ушки» на бедрах.
-            </p>
-            <div class="text__wrapper">
+                </p>
+                <p class="text">Миостимуляция показана тем, у кого есть избыток жировых отложений на талии, низкие ягодицы и «ушки» на бедрах.
+                </p>
+            </div>
+            <div class="massage__item">
                 <p class="list__title">эффект</p>
                 <ul class="list">
                     <li class="text__list">подтянутая и гладкая кожа</li>
@@ -183,35 +187,33 @@
                 </ul>
                 <div class="button__wrapper">
                     <button class="button">показания</button>
-                    <button class="button button--services">противопоказания</button>
+                    <button class="button button--massage">противопоказания</button>
                 </div>
             </div>
-
-            <div class="services__item">
+            <div class="massage__item">
                 <picture>
                     <source srcset="images/dest/Myostimulation.png" type="image/webp">
                     <img class="img" src="images/dest/Myostimulation.png" alt="services" />
                 </picture>
             </div>
-
-
         </div>
-
-
     </div>
 </section>
 <section class="section">
     <div class="container">
-        <div class="services__wrapper">
-            <h1 class="title">Вакуумный массаж</h1>
-            <p class="text">Миостимуляция – это воздействие на мышцы слабого импульсного электрического тока (30–150 Гц), приводящее к их сокращению. 20 минут миостимуляции – это минус почти 2000 килокалорий.
-                Особенностью процедуры является возможность ее применения как локально на зонах, которые обычно трудно поддаются коррекции только с помощью диеты, так и одновременно на многих участках тела – если подтянуть мышцы и убрать лишние сантиметры необходимо на всем теле.
+        <div class="massage__wrapper">
+            <div class="massage__item">
+                <h1 class="title">Вакуумный массаж</h1>
+            </div>
+            <div class="massage__item">
+                <p class="text">Миостимуляция – это воздействие на мышцы слабого импульсного электрического тока (30–150 Гц), приводящее к их сокращению. 20 минут миостимуляции – это минус почти 2000 килокалорий.
+                    Особенностью процедуры является возможность ее применения как локально на зонах, которые обычно трудно поддаются коррекции только с помощью диеты, так и одновременно на многих участках тела – если подтянуть мышцы и убрать лишние сантиметры необходимо на всем теле.
 
-
-            </p>
-            <p class="text">Миостимуляция показана тем, у кого есть избыток жировых отложений на талии, низкие ягодицы и «ушки» на бедрах.
-            </p>
-            <div class="text__wrapper">
+                </p>
+                <p class="text">Миостимуляция показана тем, у кого есть избыток жировых отложений на талии, низкие ягодицы и «ушки» на бедрах.
+                </p>
+            </div>
+            <div class="massage__item">
                 <p class="list__title">эффект</p>
                 <ul class="list">
                     <li class="text__list">подтянутая и гладкая кожа</li>
@@ -223,35 +225,33 @@
                 </ul>
                 <div class="button__wrapper">
                     <button class="button">показания</button>
-                    <button class="button button--services">противопоказания</button>
+                    <button class="button button--massage">противопоказания</button>
                 </div>
             </div>
-
-            <div class="services__item">
+            <div class="massage__item">
                 <picture>
                     <source srcset="images/dest/vacuum_massage.png" type="image/webp">
                     <img class="img" src="images/dest/vacuum_massage.png" alt="services" />
                 </picture>
             </div>
-
-
         </div>
-
-
     </div>
 </section>
 <section class="section">
     <div class="container">
-        <div class="services__wrapper">
-            <h1 class="title">Кавитацяи</h1>
-            <p class="text">Миостимуляция – это воздействие на мышцы слабого импульсного электрического тока (30–150 Гц), приводящее к их сокращению. 20 минут миостимуляции – это минус почти 2000 килокалорий.
-                Особенностью процедуры является возможность ее применения как локально на зонах, которые обычно трудно поддаются коррекции только с помощью диеты, так и одновременно на многих участках тела – если подтянуть мышцы и убрать лишние сантиметры необходимо на всем теле.
+        <div class="massage__wrapper">
+            <div class="massage__item">
+                <h1 class="title">Кавитацяи</h1>
+            </div>
+            <div class="massage__item">
+                <p class="text">Миостимуляция – это воздействие на мышцы слабого импульсного электрического тока (30–150 Гц), приводящее к их сокращению. 20 минут миостимуляции – это минус почти 2000 килокалорий.
+                    Особенностью процедуры является возможность ее применения как локально на зонах, которые обычно трудно поддаются коррекции только с помощью диеты, так и одновременно на многих участках тела – если подтянуть мышцы и убрать лишние сантиметры необходимо на всем теле.
 
-
-            </p>
-            <p class="text">Миостимуляция показана тем, у кого есть избыток жировых отложений на талии, низкие ягодицы и «ушки» на бедрах.
-            </p>
-            <div class="text__wrapper">
+                </p>
+                <p class="text">Миостимуляция показана тем, у кого есть избыток жировых отложений на талии, низкие ягодицы и «ушки» на бедрах.
+                </p>
+            </div>
+            <div class="massage__item">
                 <p class="list__title">эффект</p>
                 <ul class="list">
                     <li class="text__list">подтянутая и гладкая кожа</li>
@@ -263,21 +263,16 @@
                 </ul>
                 <div class="button__wrapper">
                     <button class="button">показания</button>
-                    <button class="button button--services">противопоказания</button>
+                    <button class="button button--massage">противопоказания</button>
                 </div>
             </div>
-
-            <div class="services__item">
+            <div class="massage__item">
                 <picture>
                     <source srcset="images/dest/Kavitatsii.png" type="image/webp">
                     <img class="img" src="images/dest/Kavitatsii.png" alt="services" />
                 </picture>
             </div>
-
-
         </div>
-
-
     </div>
 </section>
 <!--end hardware_cosmetology-->
